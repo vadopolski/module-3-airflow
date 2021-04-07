@@ -16,6 +16,7 @@ default_args = {
     'retry_delay': timedelta(seconds=120),
 }
 
+
 dag = DAG(
     username + '.data_lake_etl_new',
     default_args=default_args,
