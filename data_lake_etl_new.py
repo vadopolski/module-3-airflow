@@ -6,7 +6,7 @@ from airflow.contrib.operators.dataproc_operator import DataProcHiveOperator
 # test for cron :)
 username = 'dutkina'
 default_args = {
-    'owner': 'dutkina',
+    'owner': username,
     'depends_on_past': False,
     'start_date': datetime(2013, 1, 1, 0, 0, 0),
     'email': ['airflow@example.com'],
